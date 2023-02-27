@@ -20,6 +20,7 @@ double mean_arr(double arr[], const double len) {
     }
 }
 
+
 int main(){
 	setlocale(LC_ALL, "Rus");    
    
