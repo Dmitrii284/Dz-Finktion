@@ -12,9 +12,11 @@ double mean(double num1, double num2) {
 
 double mean_arr(double arr[], const double len) {
     double sum;
+    
     for (int i = 0; i < len; i++) {
         sum += arr[i];
-        return (sum / i);
+       
+        return 0;
     }
 }
 
@@ -46,8 +48,8 @@ int main(){
         std::cout << "Initial Array -> ";
        /* for (int i = 0; i < size; i++) {*/
             //std::cout << arr1[i] << "\t";
-            mean_arr(arr1, size);
-            std::cout << arr1[i] << "\t";
+          //  mean_arr(arr1, size);
+            std::cout << mean_arr(arr1, size) /i << "\t";
         
         
         std::cout << n;
