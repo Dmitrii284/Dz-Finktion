@@ -10,13 +10,13 @@ double mean(double num1, double num2) {
     return (num1 + num2) / 2;
 }
 
-double mean_arr(double arr[], const double len) {
-    double sum;
+double mean_arr(double arr[], const int len) {
+    double sum = 0;
     
     for (int i = 0; i < len; i++) {
         sum += arr[i];
        
-        return 0;
+        return sum/len;
     }
 }
 
@@ -37,23 +37,21 @@ int main(){
         */
         /* Task 2
          Create a mean_arr function.
-         She accepts array and its length,
+         It accepts array and its length,
              after which it returns the average
              arithmetic of all its elements.
         */
         const int size = 4;
-        int a, b, c, d;
         std::cout << "Inter the four namber -> \n";
-        std::cin >> a >> b >> c >> d;
-        int arr1[size]{ a, b, c, d };
+        double arr1[size]{};
+        std::cin >> arr1[0] >> arr1[1] >> arr1[2] >> arr1[3];
         std::cout << "Initial Array -> ";
        /* for (int i = 0; i < size; i++) {*/
             //std::cout << arr1[i] << "\t";
           //  mean_arr(arr1, size);
-            std::cout << mean_arr(arr1, size) /i << "\t";
+            std::cout << mean_arr(arr1, size) << "\t";
         
         
-        std::cout << n;
 
 
 
