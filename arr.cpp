@@ -45,7 +45,7 @@ int main(){
         std::cout << "Inter the four namber -> \n";
         double arr1[size]{};
         std::cin >> arr1[0] >> arr1[1] >> arr1[2] >> arr1[3];
-        std::cout << "Initial Array -> ";
+        std::cout << "The average arithmetic of all its elements -> ";
        /* for (int i = 0; i < size; i++) {*/
             //std::cout << arr1[i] << "\t";
           //  mean_arr(arr1, size);
