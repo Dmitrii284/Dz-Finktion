@@ -1,7 +1,7 @@
-#include <iostream>
-#include <cstdlib>  // arr[i] = rand() % (10 + 1 - 1) + 1; // [1 ...10] Случайные числа  массива
-#include <ctime> //srand(time(NULL)); Случайные числа  массива
-#include <algorithm> // функция  stor  Быстрая сортировка std::sort(arr, arr + size); std::swap(arr[j], arr[j + 1]);
+п»ї#include <iostream>
+#include <cstdlib>  // arr[i] = rand() % (10 + 1 - 1) + 1; // [1 ...10] РЎР»СѓС‡Р°Р№РЅС‹Рµ С‡РёСЃР»Р°  РјР°СЃСЃРёРІР°
+#include <ctime> //srand(time(NULL)); РЎР»СѓС‡Р°Р№РЅС‹Рµ С‡РёСЃР»Р°  РјР°СЃСЃРёРІР°
+#include <algorithm> // С„СѓРЅРєС†РёСЏ  stor  Р‘С‹СЃС‚СЂР°СЏ СЃРѕСЂС‚РёСЂРѕРІРєР° std::sort(arr, arr + size); std::swap(arr[j], arr[j + 1]);
 #include <cmath> // pow
 
 
@@ -15,8 +15,8 @@ double mean_arr(int arr[], const int length) {
         sum += arr[i];
     return (double)sum / length;
 }
-long long int  powers(int N, int M) {
-    long long int num = 0;
+ unsigned long long powers(int N, int M) {
+   unsigned long long num = 0;
     
     do {
         std::cout << N << "^" << num << " = " << pow(N, num) << " \n"; 
@@ -67,6 +67,12 @@ int main(){
         std::cout << "Inter the two numeric values: \n";
         std::cin >> n >> m;
         std::cout << powers(n, m);
+
+        /*Task 4
+Create a positive_arr function that takes
+array and its length, after which it changes all negative values вЂ‹вЂ‹into positive ones. themselves
+positive numbers should not change in any way.
+*/
 
 
 
