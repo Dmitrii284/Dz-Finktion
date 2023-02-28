@@ -15,8 +15,8 @@ double mean_arr(int arr[], const int length) {
         sum += arr[i];
     return (double)sum / length;
 }
- unsigned long long powers(int N, int M) {
-   unsigned long long num = 0;
+ double powers(int N, int M) {
+   int num = 0;
     
     do {
         std::cout << N << "^" << num << " = " << pow(N, num) << " \n"; 
