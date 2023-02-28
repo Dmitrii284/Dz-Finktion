@@ -26,6 +26,21 @@ double mean_arr(int arr[], const int length) {
     return pow(N, M);
 }
 
+ void  print_arr(int array[], const int lengs) {
+     std::cout << '[';
+     
+     for (i = 0; i < lengs; i++)         
+
+         std::cout << array[i] << ", ";
+     std::cout << "\b\b]\n";
+ }
+ void positive_arr(int arr[], const int length) {
+     for (int i = 0; i < length; i++)
+            
+     i =  i%1;  
+     std::cout << arr[i] << ", ";
+     std::cout << "\b\b \n";
+ }
 int main(){
 	setlocale(LC_ALL, "Rus");   
     int n, m;
@@ -36,12 +51,12 @@ int main(){
          Don't forget to show it works
          by calling functio,n in the main block.
          */
-         /*
+         /*std::cout << "Task 1. \nCreate a mean function that returns the arithmetic mean of the two numbers passed into it.\n";
          std::cout<<"Let's derive the arithmetic mean from the sum of the two nambers.\n\n";
-         std::cout<<"Inter the 2 namder -> ";
-         int n, m;
+         std::cout<<"Inter the 2 namder -> \n";
+        
          std::cin>>n>>m;
-         std::cout <<"The arithmetic mean of the two number "<<mean(n, m);
+         std::cout <<"The arithmetic mean of the two number "<<mean(n, m)<<"\n\n";
          */
         /* Task 2
          Create a mean_arr function.
@@ -63,10 +78,10 @@ int main(){
             print to the console all powers of N from power 0 to
             degree M inclusive.
          */
-        std::cout << "Task 3 \nRaise H to the power of M and output each value.\n\n";
+        /*std::cout << "Task 3 \nRaise H to the power of M and output each value.\n\n";
         std::cout << "Inter the two numeric values: \n";
         std::cin >> n >> m;
-        std::cout << powers(n, m);
+        std::cout << powers(n, m);*/
 
         /*Task 4
 Create a positive_arr function that takes
@@ -74,7 +89,15 @@ array and its length, after which it changes all negative values ​​into posi
 positive numbers should not change in any way.
 */
 
-
+        /*const int size2 = 4;
+        int arr2[size2]{ 4,-40, -9, 45 };
+        std::cout << positive_arr(arr2, size2);*/
+    std::cout << " Task 4.\nThe changes all negative values ​​into positive ones. \n";
+    const int size2 = 5;
+    int arr2[size2]{ 7, -2, 1, -10, 8 };
+    std::cout << "Массив: \n";
+    print_arr(arr, size);
+    std::cout<< positive_arr(arr2,size2)<<std::endl;
 
 	return 0;
 }
