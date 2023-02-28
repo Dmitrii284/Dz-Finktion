@@ -1,10 +1,10 @@
 #include <iostream>
 #include <cstdlib>  // arr[i] = rand() % (10 + 1 - 1) + 1; // [1 ...10] Случайные числа  массива
 #include <ctime> //srand(time(NULL)); Случайные числа  массива
-#include <algorithm> // функция  stor  Быстрая сортировка std::sort(arr, arr + size);  
-// функцию swap Сортировка через сравнениемассивов std::swap(arr[j], arr[j + 1]);
-#include <string>
-#include <time.h>
+#include <algorithm> // функция  stor  Быстрая сортировка std::sort(arr, arr + size); std::swap(arr[j], arr[j + 1]);
+#include <cmath> // pow
+
+
 
 double mean(double num1, double num2) {
     return (num1 + num2) / 2;
@@ -15,20 +15,21 @@ double mean_arr(int arr[], const int length) {
         sum += arr[i];
     return (double)sum / length;
 }
-int  powers(int N, int M) {
-    int num = 0;
-    for (int i = 0; i <= M; i++) {
-        num = pow(N, M);
-        //std::cout << "Power: " << '\n';
-        return num;
-    }
+long long int  powers(int N, int M) {
+    long long int num = 0;
+    
+    do {
+        std::cout << N << "^" << num << " = " << pow(N, num) << " \n"; 
+        num++;
+    } while (num < M);
+    std::cout << N << "^" << num << " = ";
+    return pow(N, M);
 }
 
 int main(){
 	setlocale(LC_ALL, "Rus");   
     int n, m;
-
-        /*Task 1
+         /*Task 1
         Create a mean function that returns
          the arithmetic mean of the two numbers
          passed into it.
