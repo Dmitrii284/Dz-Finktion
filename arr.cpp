@@ -27,19 +27,19 @@ double mean_arr(int arr[], const int length) {
 }
 
  void  print_arr(int array[], const int lengs) {
-     std::cout << '[';
-     
-     for (i = 0; i < lengs; i++)         
-
-         std::cout << array[i] << ", ";
-     std::cout << "\b\b]\n";
+     std::cout << '[';     
+     for (int i = 0; i < lengs; i++)
+        std::cout << array[i] << ", ";
+       std::cout << "\b\b]\n";
  }
  void positive_arr(int arr[], const int length) {
-     for (int i = 0; i < length; i++)
-            
-     i =  i%1;  
-     std::cout << arr[i] << ", ";
-     std::cout << "\b\b \n";
+   //  std::cout << '[';
+     for (int i = 0; i < length; i++)        
+         if (arr[i] < 0) {
+             arr[i] = -arr[i];
+             std::cout << arr[i] << ", ";
+         }
+    // std::cout << "\b\b]\n";
  }
 int main(){
 	setlocale(LC_ALL, "Rus");   
@@ -92,12 +92,11 @@ positive numbers should not change in any way.
         /*const int size2 = 4;
         int arr2[size2]{ 4,-40, -9, 45 };
         std::cout << positive_arr(arr2, size2);*/
-    std::cout << " Task 4.\nThe changes all negative values ​​into positive ones. \n";
+  //  std::cout << "Task 4.\nThe changes all negative values ​​into positive ones. \n";
     const int size2 = 5;
     int arr2[size2]{ 7, -2, 1, -10, 8 };
-    std::cout << "Массив: \n";
-    print_arr(arr, size);
-    std::cout<< positive_arr(arr2,size2)<<std::endl;
+    std::cout << "Массив: \n";   
+    std::cout << positive_arr(arr2, size2) << std::endl;
 
 	return 0;
 }
